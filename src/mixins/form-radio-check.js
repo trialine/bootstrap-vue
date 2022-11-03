@@ -259,7 +259,7 @@ export const formRadioCheckMixin = extend({
       class: [
         {
           'form-check-input': isPlain,
-          'custom-control-input': isCustom,
+          'custom-control-input form-check-input': isCustom,
           // https://github.com/bootstrap-vue/bootstrap-vue/issues/2911
           'position-static': isPlain && !$content
         },
@@ -299,7 +299,7 @@ export const formRadioCheckMixin = extend({
         {
           class: {
             'form-check-label': isPlain,
-            'custom-control-label': isCustom
+            'custom-control-label form-check-label': isCustom
           },
           attrs: { for: this.safeId() }
         },
@@ -314,7 +314,7 @@ export const formRadioCheckMixin = extend({
           {
             'form-check': isPlain,
             'form-check-inline': isPlain && isInline,
-            'custom-control': isCustom,
+            'custom-control form-check': isCustom,
             'custom-control-inline': isCustom && isInline,
             'custom-checkbox': isCustom && !isRadio && !isSwitch,
             'custom-switch': isSwitch,
