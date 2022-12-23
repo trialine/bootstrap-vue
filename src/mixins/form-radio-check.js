@@ -317,7 +317,7 @@ export const formRadioCheckMixin = extend({
             'custom-control form-check': isCustom,
             'custom-control-inline': isCustom && isInline,
             'custom-checkbox': isCustom && !isRadio && !isSwitch,
-            'custom-switch': isSwitch,
+            'form-switch': isSwitch,
             'custom-radio': isCustom && isRadio,
             // Temporary until Bootstrap v4 supports sizing (most likely in V5)
             [`b-custom-control-${computedSize}`]: computedSize && !isBtnMode
